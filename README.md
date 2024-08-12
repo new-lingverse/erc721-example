@@ -22,3 +22,10 @@ You can target any network from your Hardhat config using:
 bunx hardhat run --network sepolia scripts/deploy.ts
 # Proxy deployed to 0xE8F638d6B5D747B6caD2d675E1927D02Aa39c0a7
 ```
+
+## Safe Mint
+
+```bash
+bunx hardhat run --network sepolia scripts/mint.ts
+# Token minted to 0x6D877f96198E55085CEb56097B099cc7bb814263
+```
