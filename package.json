@@ -1,19 +1,19 @@
 {
-  "name": "hardhat-sample",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "erc721-example",
   "scripts": {
-    "test": "hardhat test"
+    "contracts:test": "turbo test --filter contracts",
+    "contracts:deploy": "turbo run deploy --filter contracts",
+    "contracts:mint": "turbo run mint --filter contracts"
   },
-  "author": "",
-  "license": "MIT",
+  "packageManager": "bun@1.11.23",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@openzeppelin/contracts": "^5.0.0",
-    "@openzeppelin/contracts-upgradeable": "^5.0.0",
-    "@openzeppelin/hardhat-upgrades": "^3.0.0",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.16.1"
+    "@types/bun": "latest",
+    "turbo": "^2.0.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
