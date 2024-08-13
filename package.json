@@ -3,7 +3,8 @@
   "scripts": {
     "contracts:test": "turbo test --filter contracts",
     "contracts:deploy": "turbo run deploy --filter contracts",
-    "contracts:mint": "turbo run mint --filter contracts"
+    "contracts:mint": "turbo run mint --filter contracts",
+    "opensea:sell": "turbo run sell --filter opensea"
   },
   "packageManager": "bun@1.11.23",
   "workspaces": [
